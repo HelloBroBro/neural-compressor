@@ -1163,6 +1163,8 @@
       </ul></li>
       <li><a href="autoapi/neural_compressor/utils/load_huggingface/index.html#neural_compressor.utils.load_huggingface.export_compressed_model">export_compressed_model() (in module neural_compressor.utils.load_huggingface)</a>
 </li>
+      <li><a href="autoapi/neural_compressor/torch/export/_export/index.html#neural_compressor.torch.export._export.export_model_for_pt2e_quant">export_model_for_pt2e_quant() (in module neural_compressor.torch.export._export)</a>
+</li>
       <li><a href="autoapi/neural_compressor/config/index.html#neural_compressor.config.ExportConfig">ExportConfig (class in neural_compressor.config)</a>
 </li>
       <li><a href="autoapi/neural_compressor/experimental/metric/coco_tools/index.html#neural_compressor.experimental.metric.coco_tools.ExportSingleImageDetectionBoxesToCoco">ExportSingleImageDetectionBoxesToCoco() (in module neural_compressor.experimental.metric.coco_tools)</a>
@@ -1882,6 +1884,8 @@
 </li>
       </ul></li>
       <li><a href="autoapi/neural_compressor/torch/algorithms/static_quant/utility/index.html#neural_compressor.torch.algorithms.static_quant.utility.get_quantizable_ops_recursively">get_quantizable_ops_recursively() (in module neural_compressor.torch.algorithms.static_quant.utility)</a>
+</li>
+      <li><a href="autoapi/neural_compressor/torch/utils/utility/index.html#neural_compressor.torch.utils.utility.get_quantizer">get_quantizer() (in module neural_compressor.torch.utils.utility)</a>
 </li>
       <li><a href="autoapi/neural_compressor/compression/pruner/regs/index.html#neural_compressor.compression.pruner.regs.get_reg">get_reg() (in module neural_compressor.compression.pruner.regs)</a>
 </li>
@@ -4034,6 +4038,10 @@
         <li><a href="autoapi/neural_compressor/torch/amp/fp8/index.html#module-neural_compressor.torch.amp.fp8">neural_compressor.torch.amp.fp8</a>
 </li>
         <li><a href="autoapi/neural_compressor/torch/amp/fp8/functions/index.html#module-neural_compressor.torch.amp.fp8.functions">neural_compressor.torch.amp.fp8.functions</a>
+</li>
+        <li><a href="autoapi/neural_compressor/torch/export/index.html#module-neural_compressor.torch.export">neural_compressor.torch.export</a>
+</li>
+        <li><a href="autoapi/neural_compressor/torch/export/_export/index.html#module-neural_compressor.torch.export._export">neural_compressor.torch.export._export</a>
 </li>
         <li><a href="autoapi/neural_compressor/torch/quantization/index.html#module-neural_compressor.torch.quantization">neural_compressor.torch.quantization</a>
 </li>
@@ -6556,8 +6564,6 @@
         <li><a href="autoapi/neural_compressor/experimental/nas/dynas/index.html#module-neural_compressor.experimental.nas.dynas">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     neural_compressor.experimental.nas.nas
 
@@ -6565,6 +6571,8 @@
         <li><a href="autoapi/neural_compressor/experimental/nas/nas/index.html#module-neural_compressor.experimental.nas.nas">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     neural_compressor.experimental.nas.nas_utils
 
@@ -8589,6 +8597,20 @@
 </li>
       </ul></li>
       <li>
+    neural_compressor.torch.export
+
+      <ul>
+        <li><a href="autoapi/neural_compressor/torch/export/index.html#module-neural_compressor.torch.export">module</a>
+</li>
+      </ul></li>
+      <li>
+    neural_compressor.torch.export._export
+
+      <ul>
+        <li><a href="autoapi/neural_compressor/torch/export/_export/index.html#module-neural_compressor.torch.export._export">module</a>
+</li>
+      </ul></li>
+      <li>
     neural_compressor.torch.quantization
 
       <ul>
@@ -9231,6 +9253,8 @@
         <li><a href="autoapi/neural_compressor/experimental/common/postprocess/index.html#neural_compressor.experimental.common.postprocess.Postprocess">(class in neural_compressor.experimental.common.postprocess)</a>
 </li>
       </ul></li>
+      <li><a href="autoapi/neural_compressor/torch/utils/utility/index.html#neural_compressor.torch.utils.utility.postprocess_model">postprocess_model() (in module neural_compressor.torch.utils.utility)</a>
+</li>
       <li><a href="autoapi/neural_compressor/config/index.html#neural_compressor.config.PostTrainingQuantConfig">PostTrainingQuantConfig (class in neural_compressor.config)</a>
 </li>
       <li><a href="autoapi/neural_compressor/experimental/metric/metric/index.html#neural_compressor.experimental.metric.metric.Accuracy.pred_list">pred_list (neural_compressor.experimental.metric.metric.Accuracy attribute)</a>
@@ -11261,6 +11285,8 @@
 <h2 id="W">W</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/neural_compressor/torch/algorithms/pt2e_quant/core/index.html#neural_compressor.torch.algorithms.pt2e_quant.core.W8A8StaticQuantizer">W8A8StaticQuantizer (class in neural_compressor.torch.algorithms.pt2e_quant.core)</a>
+</li>
       <li><a href="autoapi/neural_compressor/utils/logger/index.html#neural_compressor.utils.logger.warn">warn() (in module neural_compressor.utils.logger)</a>
 </li>
       <li><a href="autoapi/neural_compressor/utils/logger/index.html#neural_compressor.utils.logger.warning">warning() (in module neural_compressor.utils.logger)</a>
@@ -11349,7 +11375,7 @@
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   <jinja2.runtime.BlockReference object at 0x7fd779023df0> 
+   <jinja2.runtime.BlockReference object at 0x7f4b75526bf0> 
   <p></p><div><a href='https://www.intel.com/content/www/us/en/privacy/intel-cookie-notice.html' data-cookie-notice='true'>Cookies</a> <a href='https://www.intel.com/content/www/us/en/privacy/intel-privacy-notice.html'>| Privacy</a></div>
 
 

@@ -16,6 +16,8 @@ Classes
 
    neural_compressor.common.utils.utility.LazyImport
    neural_compressor.common.utils.utility.CpuInfo
+   neural_compressor.common.utils.utility.ProcessorType
+   neural_compressor.common.utils.utility.Statistics
 
 
 Functions
@@ -27,10 +29,12 @@ Functions
    neural_compressor.common.utils.utility.dump_elapsed_time
    neural_compressor.common.utils.utility.set_random_seed
    neural_compressor.common.utils.utility.set_workspace
+   neural_compressor.common.utils.utility.get_workspace
    neural_compressor.common.utils.utility.set_resume_from
    neural_compressor.common.utils.utility.set_tensorboard
    neural_compressor.common.utils.utility.log_process
    neural_compressor.common.utils.utility.call_counter
+   neural_compressor.common.utils.utility.detect_processor_type_based_on_hw
 
 
 Module Contents
@@ -52,7 +56,7 @@ Module Contents
 
 
 
-   CPU info collection.
+   Get CPU Info.
 
 
 .. py:function:: dump_elapsed_time(customized_msg='')
@@ -71,6 +75,11 @@ Module Contents
 .. py:function:: set_workspace(workspace: str)
 
    Set the workspace in config.
+
+
+.. py:function:: get_workspace()
+
+   Get the workspace in config.
 
 
 .. py:function:: set_resume_from(resume_from: str)
@@ -100,5 +109,27 @@ Module Contents
    :param func: The function to be decorated.
 
    :returns: The decorated function.
+
+
+.. py:class:: ProcessorType
+
+
+
+   Generic enumeration.
+
+   Derive from this class to define new enumerations.
+
+
+.. py:function:: detect_processor_type_based_on_hw()
+
+   Detects the processor type based on the hardware configuration.
+
+   :returns: The detected processor type (Server or Client).
+   :rtype: ProcessorType
+
+
+.. py:class:: Statistics(data, header, field_names, output_handle=logger.info)
+
+   The statistics printer.
 
 

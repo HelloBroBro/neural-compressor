@@ -39,6 +39,9 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 #### Use Docker Image with torch installed for HPU
 https://docs.habana.ai/en/latest/Installation_Guide/Bare_Metal_Fresh_OS.html#bare-metal-fresh-os-single-click
 
+> **Note**:
+> There is a version mapping between Intel Neural Compressor and Gaudi Software Stack, please refer to this [table](./docs/source/3x/gaudi_version_map.md) and make sure to use a matched combination.
+
 #### Install torch/intel_extension_for_pytorch for Intel GPU
 https://intel.github.io/intel-extension-for-pytorch/index.html#installation
 
@@ -143,7 +146,7 @@ quantized_model = fit(model=float_model, conf=static_quant_conf, calib_dataloade
       <td colspan="2" align="center"><a href="./docs/source/3x/design.md#workflows">Workflow</a></td>
       <td colspan="2" align="center"><a href="https://intel.github.io/neural-compressor/latest/docs/source/api-doc/apis.html">APIs</a></td>
       <td colspan="1" align="center"><a href="./docs/source/3x/llm_recipes.md">LLMs Recipes</a></td>
-      <td colspan="1" align="center">Examples</td>
+      <td colspan="1" align="center"><a href="./examples/3.x_api/README.md">Examples</a></td>
     </tr>
   </tbody>
   <thead>
